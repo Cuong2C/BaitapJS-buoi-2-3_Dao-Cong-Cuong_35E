@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BT JS buoi 1</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- CSS -->
+</head>
+<body>
+    <!-- Bài 1 -->
+    <div class="card">
+        <div class="card-header">
+            B1:Tính tiền lương
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for=""> Số ngày làm</label>
+                            <input type="text" id="soNgayLam" class="form-control" >
+                            <small id="helpId" class="text-muted"></small>
+                          </div>
+                          <div class="form-group">
+                            <label for="">Lương Ngày 100 000</label>
+                         </div>
+                            <button class="btn btn-success" id="tinhLuong"> Tính tiền lương </button>
+                        
+                        <div id="tienLuong"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bài 2 -->
+    <div class="card">
+        <div class="card-header">
+            B2: Tính giá trị trung bình
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="">Số thứ 1</label>
+                            <input type="number" id="soThu1" class="form-control" >
+                            <small id="helpId" class="text-muted"></small>
+                            <label for="">Số thứ 2</label>
+                            <input type="number" id="soThu2" class="form-control" >
+                            <small id="helpId" class="text-muted"></small>
+                            <label for="">Số thứ 3</label>
+                            <input type="number" id="soThu3" class="form-control" >
+                            <small id="helpId" class="text-muted"></small>
+                            <label for="">Số thứ 4</label>
+                            <input type="number" id="soThu4" class="form-control" >
+                            <small id="helpId" class="text-muted"></small>
+                            <label for="">Số thứ 5</label>
+                            <input type="number" id="soThu5" class="form-control" >
+                            <small id="helpId" class="text-muted"></small>
+                        </div>
+        
+                            <button class="btn btn-success" id="tinhTrungBinh"> Tính Giá trị TB</button>
+                            <div id="giatriTB">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Bài 3 -->
+<div class="card">
+    <div class="card-header">
+        B3:Đổi tiền USD sang VND
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Số USD</label>
+                        <input type="number" id="soUSD" class="form-control" >
+                        <small id="helpId" class="text-muted"></small>
+                      </div>
+                      <div class="form-group">
+                        <label for="">Tỉ giá = 23 500 VND/USD</label>
+                        
+                        </select>
+                     </div>
+                        <button class="btn btn-success" id="quiDoi"> Qui đổi tiền </button>
+                    
+                    <div id="tienVND"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bài 4 -->
+<div class="card">
+    <div class="card-header">
+        B4: Tính chu vi
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Chiều dài</label>
+                        <input type="number" id="chieuDai" class="form-control" >
+                        <small id="helpId" class="text-muted"></small>
+                        <label for="">Chiều rộng</label>
+                        <input type="number" id="chieuRong" class="form-control" >
+                        <small id="helpId" class="text-muted"></small>
+                    </div>  
+                        <button class="btn btn-success" id="tinhChuVi"> Tính Chu Vi, Diện Tích </button>
+                        <div id="chuVi">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bài 5 -->
+<div class="card">
+    <div class="card-header">
+        B5: Tính tổng ký số của số có 2 chữ số
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Nhập số cần tính</label>
+                        <input type="number" id="soCanTinh" class="form-control" >
+                        <small id="helpId" class="text-muted"></small>
+                    </div>  
+                        <button class="btn btn-success" id="tinhTong"> Tính tổng ký số </button>
+                        <div id="tongKySo">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<!-- Js -->
+    <script src="./main.js"></script>
+</body>
+</html>
